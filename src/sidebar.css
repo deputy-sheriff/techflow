@@ -1,0 +1,339 @@
+/* Root dashboard layout */
+.dashboard-root {
+  display: flex;
+  gap: 24px;
+  padding: 24px;
+  background: #f8f9fa;
+}
+
+/* Card/box styling for each section */
+.dashboard-box {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(20,33,61,0.08);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  min-width: 240px;
+}
+
+/* Patient and contact boxes width */
+.patient-box, .contact-box {
+  width: 240px;
+}
+
+/* Diagnosis box (main chart area) */
+.diagnosis-box {
+  width: 766px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Section titles */
+.sidebar-title, .diagnosis-title, .contact-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #14213D;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+/* Patient list layout */
+.patient-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Patient avatar block (each patient row) */
+.dashboard-profile-avatar-block {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+/* Patient avatar image */
+.avatar-image {
+  width: 24px;
+  height: 24px;
+  background: #e4baca;
+  border-radius: 50%;
+  outline: 1.5px solid white;
+}
+
+.dashboard-profile-avatar-img img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+/* Patient details (name, gender, age) */
+.profile-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.dashboard-profile-avatar-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-name {
+  color: #0f0f0f;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  line-height: 28.8px;
+}
+
+.dashboard-profile-avatar-name {
+  font-weight: 600;
+  color: #14213D;
+}
+
+.profile-username {
+  color: #707070;
+  font-size: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  line-height: 23.2px;
+}
+
+.dashboard-profile-avatar-username {
+  font-size: 14px;
+  color: #3772FF;
+}
+
+/* Search page and sidebar layouts (if used elsewhere) */
+.searchpage-root {
+  width: 100%;
+  min-height: 100vh;
+  background: #FBFFFE;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 32px;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.searchpage-main {
+  width: 844px;
+  background: #FCFFFE;
+  box-shadow: 0px 8px 16px rgba(4, 6.6, 12.2, 0.10);
+  border-radius: 15px;
+  padding: 48px 24px 24px 24px;
+  min-height: 1671px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.searchpage-sidebar {
+  width: 411px;
+  background: #FCFFFE;
+  box-shadow: 0px 8px 16px rgba(4, 6.6, 12.2, 0.10);
+  border-radius: 15px;
+  margin-top: 152px;
+  min-height: 635px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  position: relative;
+}
+
+.sidebar-section {
+  padding: 48px 24px;
+}
+
+/* Sidebar title styling */
+.sidebar-title {
+  text-align: center;
+  color: #14213D;
+  font-size: 20px;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 24px;
+}
+
+/* Advanced search form (if used) */
+.advanced-search-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.form-row {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 8px;
+}
+
+.form-select,
+.form-input {
+  padding: 7px 10px;
+  border-radius: 8px;
+  border: 1px solid #3772FF;
+  font-size: 16px;
+  font-family: 'Rubik', sans-serif;
+  color: #14213D;
+  width: 100%;
+  background: #fff;
+}
+
+/* Chart and averages area */
+.diagnosis-chart-area {
+  margin-bottom: 24px;
+  width: 700px;
+  height: 300px;
+  background: #F4F0FE;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Diagnosis stats cards below chart */
+.diagnosis-stats {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.diagnosis-stat-box {
+  background: #E0F3FA;
+  border-radius: 12px;
+  padding: 16px 24px;
+  width: 165px;
+  height: 242px;
+  text-align: center;
+}
+
+.stat-label {
+  font-size: 15px;
+  color: #14213D;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.stat-value {
+  font-size: 18px;
+  color: #3772FF;
+  font-weight: 700;
+}
+
+/* Contact details section */
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-size: 16px;
+  color: #14213D;
+  margin-top: 16px;
+}
+
+.contact-info-header {
+  font-weight: 400;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 2px;
+  color: #444140;
+}
+
+.contact-info-row {
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.contact-info-value {
+  font-size: 15px;
+  color: #222;
+  margin-left: 28px; /* aligns with icon */
+  font-weight: 600;
+}
+
+/* Highlight for selected patient */
+.dashboard-profile-avatar-block.selected {
+  background: #D8FCF7 !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* Averages/statistics box next to chart */
+.bp-averages {
+  width: 200px;
+  min-width: 200px;
+  padding: 16px;
+  background: #f4f7ff;
+  border-radius: 12px;
+  margin-left: 16px;
+  font-family: 'Murecho', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+/* Custom averages/statistics layout */
+.bp-averages-custom {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.bp-stat {
+  margin-bottom: 8px;
+}
+
+.bp-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.bp-stat-value {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 4px 0;
+}
+
+.bp-stat-status {
+  font-size: 14px;
+  margin-bottom: 2px;
+}
+
+.bp-stat-avg {
+  font-size: 13px;
+  color: #888;
+}
+
+/* Show all information button */
+.show-all-info-btn {
+  margin-top: 16px;
+  width: 100%;
+  background: #01F0D0;
+  color: #14213D;
+  border: none;
+  border-radius: 20px;
+  padding: 12px 0;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+}

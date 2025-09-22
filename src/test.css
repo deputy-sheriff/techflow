@@ -1,0 +1,138 @@
+.navbar {
+  width: 100%; /* Ensures it fits the viewport width */
+  max-width: 100%; /* Prevents overflow */
+  box-sizing: border-box; /* Includes padding in width calculation */
+  padding: 24px 40px; /* Reduce side padding for smaller screens */
+  display: flex; /* Use flex instead of inline-flex for full width */
+  justify-content: space-between;
+  align-items: center;
+  overflow-x: hidden; /* Prevents horizontal scroll */
+  border-radius: 30px;
+}
+
+.navbar-logo-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navbar-svg {
+  margin-bottom: 4px; /* Space between SVG and logo */
+}
+
+.navbar-logo {
+  width: 111.13px;
+  height: 24.93px;
+  display: flex;
+  flex-direction: row; /* Change from column to row */
+  justify-content: center;
+  align-items: center; /* Vertically center the text */
+}
+
+.apart {
+  color: #14213D;
+  font-size: 20px;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
+  line-height: 24px;
+  word-wrap: break-word;
+}
+
+.mate {
+  color: #3772FF;
+  font-size: 20px;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
+  line-height: 24px;
+  word-wrap: break-word;
+}
+
+.navbar-box {
+  width: 74.44px;
+  height: 33.5px;
+  background: #FCA311;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 48px;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.navbar-link {
+  color: #14213D;
+  font-size: 16px;
+  gap: 12px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  line-height: 24px;
+  word-wrap: break-word;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.navbar-link.active {
+  color: black;
+  background-color: #01F0D0;
+  height: 30px;
+  width: 120px;
+  border-radius: 16px;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-get-started {
+  width: 193px;
+  padding: 8px 24px;
+  background: #14213D;
+  border-radius: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.get-started-text {
+  color: #FEFFFF;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  word-wrap: break-word;
+}
+
+.navbar-profile {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 16px;
+  background: #fff;
+  border-radius: 12px;
+}
+
+.navbar-profile-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.navbar-profile-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar-profile-name {
+  font-weight: 600;
+  color: #14213D;
+}
+
+.navbar-profile-role {
+  font-size: 14px;
+  color: #3772FF;
+}
